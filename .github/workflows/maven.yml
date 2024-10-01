@@ -65,7 +65,7 @@ jobs:
         script: |
           docker stop exercicio3-zambom-aposta
           docker rm --force exercicio3-zambom-aposta
-          docker run -d -p 8080:8080 --network=rede --name exercicio3-zambom-aposta gubscruz/exercicio3-zambom-aposta-ci:${{ github.sha }}
+          docker run -d -p 8083:8083 --network=rede --name exercicio3-zambom-aposta gubscruz/exercicio3-zambom-aposta-ci:${{ github.sha }}
 
 
         
